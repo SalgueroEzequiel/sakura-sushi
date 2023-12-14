@@ -9,9 +9,24 @@ const btnCart = document.getElementById('login');
 
 const containerCartProducts = document.querySelector('.container-login');
 
-btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('desplegable');
+
+
+// DROPDOWN -------------------------------------------
+
+const btnCart2 = document.querySelector('.container-cart-icon');
+
+const containerCartProducts2 = document.querySelector('.container-cart-products');
+
+btnCart2.addEventListener('click', () => {
+    containerCartProducts2.classList.toggle('hidden-cart');
 })
+
+const cartInfo = document.querySelector('.cart-product');
+
+
+
+
+
 
 
 

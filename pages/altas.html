@@ -24,14 +24,20 @@
                 <li><a href="../pages/nuestro_espacio.html">Nuestro Espacio</a></li>
                 <li><a href="../pages/menu.html">Menú</a></li>
                 <li><a href="../pages/reservas.html">Reservas</a></li>
-                <li>
-                    <a href="../pages/login.html" id="login">Log In</a>
-                    <di class="container-login hidden-cart">
-                            <div class="desplegable">
-                                <!-- <p class="cart-empty">El carrito está vacio</p> -->
-                            </div>
+                <li class="usuario-header">Usuario</li>
+                <div class="container-icon">
+                    <div class="container-cart-icon">
+                        <i class="fa-solid fa-circle-chevron-down icon-cart"></i>
                     </div>
-                </li>
+        
+                    <div class="container-cart-products hidden-cart">
+                        <div class="row-product">
+                            <div class="cart-product" id="dropdown">
+                                <!-- <p class="cart-empty">El carrito está vacio</p> -->
+                                <li><a href="../pages/login.html" id="login"> Log In </a></li>
+                            </div>
+                        </div>
+                    </div>
             </ul>
         </nav>
     </header>
@@ -123,6 +129,18 @@
     <script src="../validacion.js"></script>
     <script src="https://kit.fontawesome.com/25b6b6b0bb.js" crossorigin="anonymous"></script>
     <script>
+
+
+        const btnCart3 = document.querySelector('.container-cart-icon');
+
+        const containerCartProducts3 = document.querySelector('.container-cart-products');
+
+        btnCart3.addEventListener('click', () => {
+        containerCartProducts3.classList.toggle('hidden-cart');
+        });
+
+
+        
         const URL = "http://127.0.0.1:5000/"
 
         // Capturamos el evento de envío del formulario
