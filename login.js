@@ -104,8 +104,8 @@ function obtener_localstorage(e){
     if (localStorage.getItem('usuario')){
         usuario = localStorage.getItem('usuario')
         // console.log(usuario1)
-        document.getElementById("login").innerHTML = `
-        <li><a href="../pages/usuario.html">${usuario}</a></li>
+        document.getElementById("dropdown").innerHTML = `
+        <li><a href="../pages/usuario.html" class="usuario-dropdown">${usuario}</a></li>
         <li><button id="cerrar-sesion">Cerrar sesion</button></li>`
         // console.log(usuario1)
     }else{
