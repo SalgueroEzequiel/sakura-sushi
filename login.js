@@ -116,7 +116,8 @@ function obtener_localstorage(e){
     // function cerrar_sesion() {
     btn_cerrar_sesion.addEventListener("click", function(){
         localStorage.clear()
-        document.getElementById("login").innerHTML = `
+        window.location.href = '../pages/login.html';
+        document.getElementById("dropdown").innerHTML = `
         <li><a href="../pages/login.html" id="login">Login</a></li>`
         })
     // }

@@ -507,6 +507,10 @@ h3 {
     margin-right: -90px;
 }
 
+.usuario-dropdown {
+    font-weight: 100;
+}
+
 
 
 
@@ -549,7 +553,7 @@ h3 {
     background-color: rgb(146, 144, 144);
 }
 
-#login {
+/* #login {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -558,10 +562,14 @@ h3 {
     background-color: rgb(116, 114, 114);
     border: black solid 1px;
     border-radius: 10px;
-    height: 30px;
-    width: 100px;
     font-size: 16px;
     margin-bottom: -1px;
+} */
+
+#dropdown li #login {
+    height: 27px;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 #login:hover {
@@ -574,10 +582,12 @@ h3 {
     background-color: rgb(191, 190, 190);
     border: rgb(140, 138, 138);
     font-size: 14px;
-    height: 30px;
+    height: 37px;
     width: 110px;
-    margin: 0;
+    padding: 6px 0;
     border-radius: 0 0 10px 10px;
+    border-top: rgb(168, 167, 167) 1px solid;
+    cursor: pointer;
 }
 
 #cerrar-sesion:hover {
