@@ -263,31 +263,14 @@ h3 {
     box-shadow: 10px 10px 40px darkgray;
 }
 
-
-
-
-
-.selec_mesa{
+.selec_mesa {
     display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .selec_mesa h3{
     font-size: 35px;
-    margin-left: 2rem;
-}
-
-.posicion {
-    
-    height: 90%;
-    width: 70%;
-}
-
-.posicion_menu {
-    height: 75%;
-    width: 50%;
 }
 
 .seccion2_menu {
